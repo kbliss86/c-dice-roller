@@ -1,0 +1,7 @@
+C:\Users\Kendall\bootcamp_c_sharp\c-dice-roller\c-dice-roller\bin\Debug\c-dice-roller.exe.config
+C:\Users\Kendall\bootcamp_c_sharp\c-dice-roller\c-dice-roller\bin\Debug\c-dice-roller.exe
+C:\Users\Kendall\bootcamp_c_sharp\c-dice-roller\c-dice-roller\bin\Debug\c-dice-roller.pdb
+C:\Users\Kendall\bootcamp_c_sharp\c-dice-roller\c-dice-roller\obj\Debug\c-dice-roller.csproj.AssemblyReference.cache
+C:\Users\Kendall\bootcamp_c_sharp\c-dice-roller\c-dice-roller\obj\Debug\c-dice-roller.csproj.CoreCompileInputs.cache
+C:\Users\Kendall\bootcamp_c_sharp\c-dice-roller\c-dice-roller\obj\Debug\c-dice-roller.exe
+C:\Users\Kendall\bootcamp_c_sharp\c-dice-roller\c-dice-roller\obj\Debug\c-dice-roller.pdb
