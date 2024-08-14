@@ -65,46 +65,55 @@ Create an application that simulates dice rolling with user-defined dice sizes.
             //According to internet There’s really no upper limit to the number of faces you can have on a die (as long as it’s even), but the most common are 4, 6, 8, 10, 12, and 20.
             while (dieSides % 2 != 0 || dieSides < 3 || dieSides > 21)
             {
+                //Instructs user to enter a valid number of sides for the die
                 Console.WriteLine("Please enter a valid number of sides for the die (4, 6, 8, 10, 12, or 20).");
                 dieSides = int.Parse(Console.ReadLine());
             }
-
+            //User can roll the dice multiple times, variable set up for while loop
             bool rollAgain = true;
-            while (rollAgain)
+            //While loop for rolling the dice multiple times
+            while (rollAgain)//while true, roll again!
             {
 
-
+                //Repeats the user input for the die sides and rolls the dice
                 Console.WriteLine($"Great! You have a {dieSides}-sided die. Let's roll it!");
                 RollDice(dieSides);
-
+                //Ask user if they would like to roll again
                 Console.WriteLine("Would you like to roll again? (y/n)");
+                //Verify user entered a valid response
                 string rollAgainInput = Console.ReadLine().ToLower();
+                //Extra Credit - Verify user entered a valid response
                 while (rollAgainInput != "y" && rollAgainInput != "n")
                 {
+                    //Instructs user to enter a valid repsonse
                     Console.WriteLine("Please enter a valid response (y/n).");
                     rollAgainInput = Console.ReadLine().ToLower();
                 }
-
+                //If user enters "n" the loop will end
                 if (rollAgainInput == "n")
                 {
                     rollAgain = false;
                 }
+                //If user enters "y" the loop will continue
                 else
                 {
+                    //Instructs user to press enter to roll again
                     Console.WriteLine("Press Enter to roll again!");
                     rollAgain = true;
                 }
-
+                //Stops the console from closing after the user enters "n"
                 Console.ReadLine();
             }
 
         }
 
+        //Method for Rolling Dice
         static void RollDice(int dieSides)
         {
             Random random = new Random();
             int roll1 = random.Next(1, dieSides + 1);
             int roll2 = random.Next(1, dieSides + 1);
+
 
             Console.WriteLine($"You rolled a {roll1 + roll2} !");
             String result = CheckDiceCombo(roll1, roll2, dieSides);
@@ -112,6 +121,9 @@ Create an application that simulates dice rolling with user-defined dice sizes.
             Console.WriteLine($"That's a {result} result!");
         }
 
+
+
+        //Method for Dice Combinations and Dice Totals
         static string CheckDiceCombo(int roll1, int roll2, int dieSides)
         {
             int diceTotal = roll1 + roll2;
